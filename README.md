@@ -13,6 +13,6 @@ request will be redirected to movie db api.
 Security is done using JWT tokens. 
 Front end is done using angular JS 6 and backend using microservices.
 
-Dockerised the application.
+Dockerise  the application and run docker compose up.
 
 
