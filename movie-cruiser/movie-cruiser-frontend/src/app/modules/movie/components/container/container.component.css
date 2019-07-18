@@ -1,0 +1,6 @@
+.movie-container {
+    margin:auto 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

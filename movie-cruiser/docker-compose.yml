@@ -1,0 +1,45 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306    
+    network_mode: host
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: moviedb
+      MYSQL_USER: app_root
+      MYSQL_PASSWORD: root123
+
+  user-app:
+    image: user-app
+    build: movie-cruiser-authentication/
+    restart: always
+    network_mode: host
+    depends_on:
+      - mysql
+    ports:
+      - 8089:8089
+    expose:
+      - 8089
+      
+  service-app:
+    image: service-app
+    build: movie-cruiser-backend/
+    restart: always
+    network_mode: host
+    depends_on:
+      - mysql
+    ports:
+      - 8082:8082
+    expose:
+      - 8082
+
+  frontend:
+    image: frontend
+    build: movie-cruiser-frontend/
+    network_mode: host
+    ports:
+      - 8080:8080
+    expose:
+      - 8080

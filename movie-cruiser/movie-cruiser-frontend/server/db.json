@@ -1,0 +1,108 @@
+{
+  "watchlist": [
+    {
+      "vote_count": 1861,
+      "id": 19404,
+      "video": false,
+      "vote_average": 9.3,
+      "title": "Dilwale Dulhania Le Jayenge",
+      "popularity": 10.936,
+      "poster_path": "https://image.tmdb.org/t/p/w500/uC6TTUhPpQCmgldGyYveKRAu8JN.jpg",
+      "original_language": "hi",
+      "original_title": "दिलवाले दुल्हनिया ले जायेंगे",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "backdrop_path": "/nl79FQ8xWZkhL3rDr1v2RFFR6J0.jpg",
+      "adult": false,
+      "overview": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
+      "release_date": "1995-10-20"
+    },
+    {
+      "vote_count": 7307,
+      "id": 299536,
+      "video": false,
+      "vote_average": 8.3,
+      "title": "Avengers: Infinity War",
+      "popularity": 237.492,
+      "poster_path": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      "original_language": "en",
+      "original_title": "Avengers: Infinity War",
+      "genre_ids": [
+        12,
+        878,
+        14,
+        28
+      ],
+      "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+      "adult": false,
+      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      "release_date": "2018-04-25"
+    },
+    {
+      "vote_count": 658,
+      "id": 493922,
+      "video": false,
+      "vote_average": 7,
+      "title": "Hereditary",
+      "popularity": 76.317,
+      "poster_path": "https://image.tmdb.org/t/p/w500/4GFPuL14eXi66V96xBWY73Y9PfR.jpg",
+      "original_language": "en",
+      "original_title": "Hereditary",
+      "genre_ids": [
+        27,
+        18,
+        9648,
+        53
+      ],
+      "backdrop_path": "/pS9Aub8MPyQbENblGD8mHeaqMuv.jpg",
+      "adult": false,
+      "overview": "When Ellen, the matriarch of the Graham family, passes away, her daughter's family begins to unravel cryptic and increasingly terrifying secrets about their ancestry. The more they discover, the more they find themselves trying to outrun the sinister fate they seem to have inherited.",
+      "release_date": "2018-06-04"
+    },
+    {
+      "vote_count": 562,
+      "id": 345940,
+      "video": false,
+      "vote_average": 6.2,
+      "title": "The Meg",
+      "popularity": 150.433,
+      "poster_path": "https://image.tmdb.org/t/p/w500/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg",
+      "original_language": "en",
+      "original_title": "The Meg",
+      "genre_ids": [
+        28,
+        878,
+        53,
+        27
+      ],
+      "backdrop_path": "/ibKeXahq4JD63z6uWQphqoJLvNw.jpg",
+      "adult": false,
+      "overview": "A deep sea submersible pilot revisits his past fears in the Mariana Trench, and accidentally unleashes the seventy foot ancestor of the Great White Shark believed to be extinct.",
+      "release_date": "2018-08-09"
+    },
+    {
+      "vote_count": 1170,
+      "id": 402900,
+      "video": false,
+      "vote_average": 6.9,
+      "title": "Ocean's Eight",
+      "popularity": 101.914,
+      "poster_path": "https://image.tmdb.org/t/p/w500/MvYpKlpFukTivnlBhizGbkAe3v.jpg",
+      "original_language": "en",
+      "original_title": "Ocean's Eight",
+      "genre_ids": [
+        80,
+        35,
+        28,
+        53
+      ],
+      "backdrop_path": "/scQf03Fm3jeyv4FH04qvi4fp4wh.jpg",
+      "adult": false,
+      "overview": "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century at New York's annual Met Gala.",
+      "release_date": "2018-06-07"
+    }
+  ]
+}

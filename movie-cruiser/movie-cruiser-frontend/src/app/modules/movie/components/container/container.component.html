@@ -1,0 +1,6 @@
+<h4>{{header}}</h4>
+<div class="movie-container">
+  <movie-thumbnail *ngFor="let movie of movies" [movie]="movie" [watchlist]="watchlist"
+    (addMovie)="addToWatchlist($event)" 
+    (deleteMovie)="deleteFromWatchlist($event)"></movie-thumbnail>
+</div>

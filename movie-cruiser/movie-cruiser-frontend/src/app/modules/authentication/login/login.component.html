@@ -1,0 +1,23 @@
+
+
+<div class="register-container">
+    <form class="register-form" #registerForm="ngForm" (ngSubmit)="loginUser()">
+<mat-card class="register-card">
+  <mat-card-header >       
+      <mat-card-title class="register-header">Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="register-overview">     
+      <mat-form-field>
+          <input matInput placeholder="User Id" [(ngModel)]="newUser.userId" name="userId" class="userId">      
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="password" [(ngModel)]="newUser.password" name="password" class="password">      
+        </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions class="movie-actions">
+      <button  mat-button color="primary" type="submit" class="loginButton">Login</button>
+      <button  mat-button color="primary" [routerLink]="['/user/register']" class="registerButton"> Register</button>
+  </mat-card-actions>
+</mat-card>
+</form>
+</div>
