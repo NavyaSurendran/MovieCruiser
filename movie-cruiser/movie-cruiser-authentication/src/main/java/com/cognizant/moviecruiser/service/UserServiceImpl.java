@@ -9,7 +9,10 @@ import com.cognizant.moviecruiser.entity.User;
 import com.cognizant.moviecruiser.exception.UserAlreadyExsitsException;
 import com.cognizant.moviecruiser.exception.UserNotFoundException;
 import com.cognizant.moviecruiser.repo.UserRepository;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 @Service
 public class UserServiceImpl implements UserService {	
 	
