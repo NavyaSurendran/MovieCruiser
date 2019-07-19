@@ -24,6 +24,10 @@ public class UserServiceImpl implements UserService {
 		this.repo = repo;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.UserService#saveUser(com.cognizant.moviecruiser.entity.User)
+	 * This method will save user Entity.
+	 */
 	@Override
 	public boolean saveUser(User user) throws UserAlreadyExsitsException, UserNotFoundException {
 		Optional<User> u = repo.findById(user.getUserId());
@@ -34,6 +38,10 @@ public class UserServiceImpl implements UserService {
 		return true;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.UserService#findByUserIdAndPassword(java.lang.String, java.lang.String)
+	 * This method will retrieve user object by userId and password
+	 */
 	@Override
 	public User findByUserIdAndPassword(String userId, String password) throws UserNotFoundException {
 		User user = repo.findByUserIdAndPassword(userId, password);
