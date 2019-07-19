@@ -16,6 +16,10 @@ import com.cognizant.moviecruiser.entity.User;
 import com.cognizant.moviecruiser.service.SecurityTokenGenerator;
 import com.cognizant.moviecruiser.service.UserService;
 
+/**
+ * @author Navya Surendran
+ *
+ */
 @RestController
 @EnableWebMvc
 @RequestMapping(path="api/v1/user")
