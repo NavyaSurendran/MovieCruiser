@@ -5,7 +5,10 @@ import java.util.List;
 import com.cognizant.moviecruiser.domain.Movie;
 import com.cognizant.moviecruiser.exception.MovieAlreadyExistsException;
 import com.cognizant.moviecruiser.exception.MovieNotFoundException;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 public interface MovieService {
 	
 	boolean saveMovie(Movie movie) throws MovieAlreadyExistsException;
