@@ -6,7 +6,10 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 import com.cognizant.moviecruiser.filter.JwtFilter;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 @SpringBootApplication
 public class MovieCruiserApplication {
 
