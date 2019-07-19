@@ -1,5 +1,8 @@
 package com.cognizant.moviecruiser.exception;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 public class MovieNotFoundException extends Exception {
 
 	private String message;
