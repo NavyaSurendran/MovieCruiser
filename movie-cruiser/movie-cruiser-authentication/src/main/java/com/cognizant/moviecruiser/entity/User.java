@@ -8,7 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 @Entity
 @Table(name="user")
 public class User {
