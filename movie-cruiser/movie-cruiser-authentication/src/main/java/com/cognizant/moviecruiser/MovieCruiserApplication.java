@@ -3,7 +3,10 @@ package com.cognizant.moviecruiser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 @SpringBootApplication
 public class MovieCruiserApplication {
 
