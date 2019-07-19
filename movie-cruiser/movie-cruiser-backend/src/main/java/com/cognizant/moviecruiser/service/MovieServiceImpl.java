@@ -26,6 +26,10 @@ public class MovieServiceImpl implements MovieService {
 		this.movieRepo = movieRepo;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.MovieService#saveMovie(com.cognizant.moviecruiser.domain.Movie)
+	 * Method will save movie to DB
+	 */
 	@Override
 	public boolean saveMovie(Movie movie) throws MovieAlreadyExistsException {
 		final Optional<Movie> object = movieRepo.findById(movie.getId());
@@ -36,6 +40,10 @@ public class MovieServiceImpl implements MovieService {
 		return true;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.MovieService#updateMovie(com.cognizant.moviecruiser.domain.Movie)
+	 * This method will update movie details
+	 */
 	@Override
 	public Movie updateMovie(Movie updatedMovie) throws MovieNotFoundException {
 		final Movie movie = movieRepo.findById(updatedMovie.getId()).orElse(null);
@@ -47,6 +55,10 @@ public class MovieServiceImpl implements MovieService {
 		return movie;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.MovieService#getMovieById(int)
+	 * This method will retrieve movie by Id.
+	 */
 	@Override
 	public Movie getMovieById(int id) throws MovieNotFoundException {
 		final Movie movie = movieRepo.findById(id).orElse(null);
@@ -56,12 +68,20 @@ public class MovieServiceImpl implements MovieService {
 		return movie;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.MovieService#deleteMovieById(int)
+	 * This method will delete a particular movie
+	 */
 	@Override
 	public boolean deleteMovieById(int id) throws MovieNotFoundException {			
 		movieRepo.deleteById(id);
 		return true;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.MovieService#getMyMovies(java.lang.String)
+	 * This method will retrieve all movies
+	 */
 	@Override
 	public List<Movie> getMyMovies(String userId) {
 		return movieRepo.findByUserId(userId);
