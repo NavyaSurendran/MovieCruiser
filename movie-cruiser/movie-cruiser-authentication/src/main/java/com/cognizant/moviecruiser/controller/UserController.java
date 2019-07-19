@@ -36,7 +36,10 @@ public class UserController {
 		this.userService = userService;
 		this.tokenGenerator = tokenGenerator;
 	}
-	
+	/**
+	 * @param user
+	 * @return
+	 */
 	@PostMapping(path="/register")
 	public ResponseEntity<?> registerUser(@RequestBody User user) {
 		try {
@@ -46,7 +49,10 @@ public class UserController {
 			return new ResponseEntity<String>("{\"message\":\""+e.getMessage()+"\"}",HttpStatus.CONFLICT);
 		}
 	}
-	
+	/**
+	 * @param loginDetails
+	 * @return
+	 */
 	@PostMapping(path="/login")
 	public ResponseEntity<?> loginUser(@RequestBody User loginDetails) {
 		try {
