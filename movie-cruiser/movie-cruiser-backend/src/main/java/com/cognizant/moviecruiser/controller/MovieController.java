@@ -41,7 +41,13 @@ public class MovieController {
 	public MovieController(final MovieService movieService) {		
 		this.movieService = movieService;
 	}
-	
+	/**
+	 * @param movie
+	 * @param request
+	 * @param response
+	 * @return
+	 * Rest End point for saving new movie
+	 */
 	@PostMapping
 	public ResponseEntity<?> saveNewMovie(@RequestBody final Movie movie, HttpServletRequest request, HttpServletResponse response) {
 		ResponseEntity<?> responseEntity;
@@ -62,7 +68,12 @@ public class MovieController {
 		}
 		return responseEntity;
 	}
-	
+	/**
+	 * @param id
+	 * @param movie
+	 * @return
+	 * Rest Api end point for updating movie details
+	 */
 	@PutMapping(path="/{id}")
 	public ResponseEntity<?> updateMovie(@PathVariable("id")final int id, @RequestBody final Movie movie) {
 		ResponseEntity<?> responseEntity;
@@ -75,7 +86,13 @@ public class MovieController {
 		return responseEntity;		
 	}
 	
-	
+	/**
+	 * @param id
+	 * @param request
+	 * @param response
+	 * @return
+	 * Rest Api end point for deleting a particular Movie
+	 */
 	@DeleteMapping(path="/{id}")
 	public ResponseEntity<?> deleteMovie(@PathVariable("id")final int id,HttpServletRequest request, HttpServletResponse response) {
 		ResponseEntity<?> responseEntity;
@@ -88,7 +105,11 @@ public class MovieController {
 		return responseEntity;		
 	}
 	
-	
+	/**
+	 * @param id
+	 * @return
+	 * This service will return a movie when given with a movie ID
+	 */
 	@GetMapping(path="/{id}")
 	public ResponseEntity<?> fetchMovie(@PathVariable("id")final int id) {
 		ResponseEntity<?> responseEntity;
@@ -101,7 +122,12 @@ public class MovieController {
 		return responseEntity;		
 	}
 	
-	
+	/**
+	 * @param request
+	 * @param response
+	 * @return
+	 * This method will retrive All Movies
+	 */
 	@GetMapping
 	public ResponseEntity<?> fetchMylMovies(HttpServletRequest request, HttpServletResponse response) {		
 		final String authHeader = request.getHeader("authorization");
