@@ -10,6 +10,10 @@ import com.cognizant.moviecruiser.entity.User;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+/**
+ * @author Navya Surendran
+ *
+ */
 
 @Component
 public class JwtSecurityTokenGenerator implements SecurityTokenGenerator {
