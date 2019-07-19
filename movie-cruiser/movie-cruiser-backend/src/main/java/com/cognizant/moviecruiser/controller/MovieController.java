@@ -26,7 +26,10 @@ import com.cognizant.moviecruiser.exception.MovieNotFoundException;
 import com.cognizant.moviecruiser.service.MovieService;
 
 import io.jsonwebtoken.Jwts;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 @RestController
 @RequestMapping(path="/api/v1/movie")
 @CrossOrigin(origins = {"http://localhost:4200","http://localhost:8080"})
