@@ -18,6 +18,10 @@ import io.jsonwebtoken.SignatureAlgorithm;
 @Component
 public class JwtSecurityTokenGenerator implements SecurityTokenGenerator {
 
+	/* (non-Javadoc)
+	 * @see com.cognizant.moviecruiser.service.SecurityTokenGenerator#generateToken(com.cognizant.moviecruiser.entity.User)
+	 * method for generating JWT Access Token
+	 */
 	@Override
 	public Map<String, String> generateToken(User user) {
 		String jwtToken = "";
