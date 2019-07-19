@@ -11,7 +11,10 @@ import com.cognizant.moviecruiser.domain.Movie;
 import com.cognizant.moviecruiser.exception.MovieAlreadyExistsException;
 import com.cognizant.moviecruiser.exception.MovieNotFoundException;
 import com.cognizant.moviecruiser.repo.MovieRepository;
-
+/**
+ * @author Navya Surendran
+ *
+ */
 @Service
 public class MovieServiceImpl implements MovieService {
 
