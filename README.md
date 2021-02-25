@@ -10,9 +10,9 @@ Using this application one can view top rated movies, poplar movies and manage t
 User can also view and update overview, release date and comments about movies. while searching for a movie the
 request will be redirected to movie db api.
 
-Security is done using JWT tokens. 
+Security is done using JWT tokens. . 
 Front end is done using angular JS 6 and backend using microservices.
 
-Dockerise  the application and run docker compose up.
+Dockerise  the application and run docker compose up. 
 
 
