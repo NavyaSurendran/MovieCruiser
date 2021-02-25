@@ -68,6 +68,8 @@ public class UserController {
 				throw new Exception("User with the given Id does not exsit");
 			}
 			
+			
+			
 			String pwd = user.getPassword();
 			if (!pwd.equals(password)) {
 				throw new Exception("Invalid login credentials, please check username and password");
